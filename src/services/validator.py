@@ -48,7 +48,7 @@ class OutputValidator:
         # Replace links to prevent punctuation inside links from splitting sentences
         temp_text = re.sub(r'\[.*?\]\(.*?\)', 'LINK', text)
         # Regex to split on . or ? followed by whitespace, ignoring typical decimal points or abbreviations
-        sentences = re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s', temp_text)
+        sentences = re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<!\b[A-Z]\.)(?<=\.|\?)\s', temp_text)
         return [s.strip() for s in sentences if s.strip()]
 
     def enforce_sentence_limit(self, text, original_text_for_link=None):

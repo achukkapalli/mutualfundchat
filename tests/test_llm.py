@@ -13,7 +13,7 @@ def count_sentences(text):
     """Simple helper to count sentences based on punctuation."""
     # Strip links to avoid punctuation in URLs from counting as sentence boundaries
     stripped = re.sub(r'\[.*?\]\(.*?\)', 'LINK', text)
-    sentences = re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s', stripped)
+    sentences = re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<!\b[A-Z]\.)(?<=\.|\?)\s', stripped)
     return len([s for s in sentences if s.strip()])
 
 def test_llm_generation():
