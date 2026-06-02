@@ -1,0 +1,29 @@
+{
+  "sources": [
+    {
+      "name": "HDFC Mid-Cap Opportunities Fund Direct Growth",
+      "url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "category": "Mid Cap"
+    },
+    {
+      "name": "HDFC Top 100 Fund (Large Cap) Direct Growth",
+      "url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "category": "Large Cap"
+    },
+    {
+      "name": "HDFC Small Cap Fund Direct Growth",
+      "url": "https://groww.in/mutual-funds/hdfc-small-cap-fund-direct-growth",
+      "category": "Small Cap"
+    },
+    {
+      "name": "HDFC Gold ETF Fund of Fund Direct Plan Growth",
+      "url": "https://groww.in/mutual-funds/hdfc-gold-etf-fund-of-fund-direct-plan-growth",
+      "category": "Gold ETF FOF"
+    },
+    {
+      "name": "HDFC Defence Fund Direct Growth",
+      "url": "https://groww.in/mutual-funds/hdfc-defence-fund-direct-growth",
+      "category": "Sectoral / Thematic"
+    }
+  ]
+}
