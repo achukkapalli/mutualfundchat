@@ -1,3 +1,11 @@
+# Try to override standard sqlite3 with pysqlite3-binary if available (required for ChromaDB on Streamlit Cloud)
+try:
+    import sys
+    __import__('pysqlite3')
+    sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+except ImportError:
+    pass
+
 import os
 import sys
 import streamlit as st
